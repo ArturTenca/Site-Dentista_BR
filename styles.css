@@ -54,3 +54,9 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Playfair Display', serif; }
 .delay-200 { animation-delay: 200ms; transition-delay: 200ms; }
 .delay-300 { animation-delay: 300ms; transition-delay: 300ms; }
 .delay-400 { animation-delay: 400ms; transition-delay: 400ms; }
+
+@keyframes colorShift {
+    0%, 100% { color: #a5f3fc; text-shadow: 0 0 10px rgba(165, 243, 252, 0.2); } /* cyan-200 */
+    50% { color: #67e8f9; text-shadow: 0 0 20px rgba(103, 232, 249, 0.4); } /* cyan-300 */
+}
+.animate-color-shift { animation: colorShift 4s ease-in-out infinite; }
